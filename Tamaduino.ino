@@ -1190,6 +1190,20 @@ void loop() {
           case 801:
             soundEnabled=!soundEnabled;
             saveGame(); 
+          break;
+
+          case 901:
+            display.invertDisplay(true);
+            saveGame();
+            delay(150);
+            display.invertDisplay(false);
+          break; 
+          
+          case 1001:
+            display.invertDisplay(true);
+            delay(150);
+            display.invertDisplay(false);
+            resetGame();
           break; 
       }
       action=0;
@@ -1249,11 +1263,11 @@ void loop() {
       }
       if(setting==901){
         display.println(F("save game"));
-        saveGame();
+        
       }
       if(setting==1001){
         display.println(F("reset game"));
-        resetGame();
+
       } 
     }
   
