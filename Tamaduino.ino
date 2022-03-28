@@ -444,7 +444,7 @@ void setup() {
   // splash
   display.setTextColor(WHITE);
   //display.println(F("jakobdesign presents")); 
-  display.print(F(" jakobdesign presents")); 
+  display.print(F(" jakobdesign presents\n maelremrem.xyz edition")); 
   display.drawBitmap(15, 24, splash1 , 48, 26, WHITE);
   display.drawBitmap(48, 24, splash2 , 80, 40, WHITE);
   display.display();
